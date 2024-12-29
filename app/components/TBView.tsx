@@ -1,11 +1,11 @@
 import { client } from '@/sanity/lib/client'
-import { EQUATION_VIEWS_QUERY } from '@/sanity/lib/queries'
+import { TOOLBOX_VIEWS_QUERY } from '@/sanity/lib/queries'
 import { writeClient } from '@/sanity/lib/write-client';
 import React from 'react';
 
-const View = async ({ id }: { id: string }) => {
+const TBView = async ({ id }: { id: string }) => {
 
-    const { views: totalViews } = await client.withConfig({useCdn: false}).fetch(EQUATION_VIEWS_QUERY, {id}); 
+    const { views: totalViews } = await client.withConfig({useCdn: false}).fetch(TOOLBOX_VIEWS_QUERY, {id}); 
 
 
     await writeClient
@@ -22,4 +22,4 @@ const View = async ({ id }: { id: string }) => {
   )
 }
 
-export default View
+export default TBView

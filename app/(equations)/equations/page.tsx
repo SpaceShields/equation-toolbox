@@ -39,7 +39,7 @@ const EquationsPage = async () => {
 
     return (
     <>
-        <div className='text-center text-2xl py-3 font-extrabold'>Fields of Study</div>
+        <div className='text-center text-3xl py-3 font-android'>Fields of Study</div>
         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 p-4 w-11/12 h-auto mx-auto rounded-md'>
             <div className="card bg-base-100 w-auto md:shadow-md hover:shadow-primary" key='999' >
                 <div className="card-body text-center">

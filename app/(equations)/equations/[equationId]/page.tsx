@@ -3,7 +3,7 @@ import EqnRender from '@/app/components/EqnRender';
 import { client } from '@/sanity/lib/client';
 import { EQUATION_BY_ID_QUERY } from '@/sanity/lib/queries';
 import { notFound } from 'next/navigation';
-import View from '@/app/components/View';
+import View from '@/app/components/EqnView';
 
 // export const experimental_ppr = true;
 

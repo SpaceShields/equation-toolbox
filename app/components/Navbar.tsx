@@ -9,8 +9,7 @@ const Navbar = () => {
             <div className="flex-1">
                 <div className="btn btn-md btn-ghost text-lg"><Link href={'/'}>Equation Toolbox</Link></div>
                 <div className="px-3 hover:underline hover:text-primary"><Link href="/equations">Equations</Link></div>
-                <div className="px-3 hover:underline hover:text-primary"><Link href="/mytoolboxes">My Toolboxes</Link></div>
-                <div className="px-3 hover:underline hover:text-primary"><Link href="/users">Users</Link></div>
+                <div className="px-3 hover:underline hover:text-primary"><Link href="/toolboxes">Toolboxes</Link></div>
             </div>
             <div className="flex-none gap-2">
                 {/* <div className="form-control">

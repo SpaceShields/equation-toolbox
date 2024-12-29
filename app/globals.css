@@ -34,7 +34,7 @@
   }
 
   .section_container {
-    @apply px-6 py-10 max-w-7xl mx-auto;
+    @apply px-12 py-10 max-w-7xl mx-auto;
   }
 
   .card_grid {
@@ -83,6 +83,35 @@
 
   .view-text {
       @apply font-medium text-[16px] bg-secondary px-4 py-2 rounded-lg capitalize shadow-inner shadow-black;
+  }
+
+  /* Toolbox Form */
+  .toolbox-form {
+    @apply max-w-3xl w-full mx-auto my-5 space-y-8 px-6 justify-items-center;
+  }
+
+  .toolbox-form_label {
+    @apply font-bold text-[18px] text-secondary uppercase;
+  }
+
+  .toolbox-form_input {
+    @apply border-[3px] w-full border-accent px-5 py-2 text-[18px] bg-base-100 font-comfortaa rounded-full mt-3 !important;
+  }
+
+  .toolbox-form_textarea {
+    @apply border-[3px] w-full border-accent px-3 py-2 text-[18px] bg-base-100 font-comfortaa rounded-[20px] mt-3 !important;
+  }
+
+  .toolbox-form_error {
+      @apply text-red-600 mt-1 ml-5;
+  }
+
+  .toolbox-form_editor {
+      @apply mt-3 border-[3px] border-accent text-[18px] font-semibold !important;
+  }
+
+  .toolbox-form_btn {
+      @apply bg-base-100 border-[3px] border-accent rounded-full py-2 px-4 min-h-[70px] w-full font-bold text-[18px] shadow-inner shadow-black hover:bg-accent hover:shadow-lg hover:shadow-black !important;
   }
 }
 

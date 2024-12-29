@@ -24,7 +24,7 @@ export default async function Home({ searchParams }: {
   return (
     <main>
       <section>
-        <div className='justify-self-center text-center'>
+        <div className='justify-self-center justify-center text-center w-full'>
           <h1 className='text-3xl font-comfortaa'> Welcome to the Equation Toolbox!</h1>
           <br />
           <SignIn />

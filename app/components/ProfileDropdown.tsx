@@ -51,7 +51,7 @@ const ProfileIconDropdownButton = async () => {
             <form
                 action={async () => {
                     "use server"
-                    await signIn("google", {redirectTo: '/mytoolboxes'})
+                    await signIn("google", {redirectTo: '/'})
                 }}
                 >
                 <button className="rounded-full border border-transparent p-2.5 text-center text-sm transition-all hover:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
