@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+  }
+}
+
+@layer utilities {
+  .heading {
+    @apply uppercase bg-black px-6 py-3 font-comfortaa font-extrabold text-white sm:text-[54px] sm:leading-[64px] text-[36px] leading-[46px] max-w-5xl text-center my-5
+  }
+
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+
+  .search-form {
+    @apply max-w-3xl w-full min-h-[80px] rounded-[80px] text-[24px] mt-8 px-5 flex flex-row items-center gap-5 shadow-md shadow-black;
+  }
+
+  .search-input {
+    @apply flex-1 font-bold bg-transparent w-full h-auto outline-none;
+  }
+
+  .search-btn {
+    @apply size-[50px] rounded-full bg-base-300 flex justify-center items-center shadow-sm shadow-black !important;
+  }
+
+  .section_container {
+    @apply px-6 py-10 max-w-7xl mx-auto;
+  }
+
+  .card_grid {
+    @apply grid md:grid-cols-3 sm:grid-cols-2 gap-5;
+  }
+
+  .card_grid-sm {
+      @apply grid sm:grid-cols-2 gap-5;
+  }
+
+  .no-result {
+      @apply text-black text-sm font-normal;
+  }
+
+  .text-30-semibold {
+    @apply font-semibold text-[30px];
+  }
+  .text-16-medium {
+    @apply font-medium text-[12px];
+  }
+
+  /* equationcard */
+  .equation-card {
+    @apply py-6 px-5 rounded-[22px] shadow-md transition-all duration-500 hover:shadow-md hover:shadow-primary;
+  }
+
+  .equation-card_name {
+      @apply font-comfortaa text-[14px] px-4 py-2 rounded-full group-hover:shadow-inner group-hover:shadow-secondary;
+  }
+
+  .equation-card_btn {
+      @apply rounded-full bg-black-200 font-medium text-[16px] text-white px-5 py-3 !important;
+  }
+
+  .equation-card_skeleton {
+      @apply w-full h-96 rounded-[22px] bg-zinc-400;
+  }
+
+  .divider {
+    @apply border-dotted bg-base-300 max-w-4xl my-10 mx-auto;
+  }
+
+  .view-container {
+    @apply flex justify-end items-center mt-5 fixed bottom-3 left-3;
+  }
+
+  .view-text {
+      @apply font-medium text-[16px] bg-secondary px-4 py-2 rounded-lg capitalize shadow-inner shadow-black;
+  }
+}
+
+body {
+  padding: 1rem;
+}

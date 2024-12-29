@@ -1,0 +1,875 @@
+[
+  {
+    "id": 1,
+    "name": "First Kinematic Equation",
+    "description": "Relates final velocity, initial velocity, acceleration, and time.",
+    "latex_equation": "v = u + at",
+    "category": "Classical Mechanics",
+    "created_in": "Classical Era",
+    "history": "This equation originates from classical mechanics, primarily developed during the 17th century by scientists such as Galileo Galilei and Isaac Newton. It forms part of the foundational equations of motion for objects under constant acceleration.",
+    "variables": [
+      {
+        "id": 101,
+        "name": "Final velocity",
+        "description": "The velocity of the object at time t.",
+        "latex_variable": "v",
+        "value": "na",
+        "units": "m/s"
+      },
+      {
+        "id": 102,
+        "name": "Initial velocity",
+        "description": "The velocity of the object at the start of observation.",
+        "latex_variable": "u",
+        "value": "na",
+        "units": "m/s"
+      },
+      {
+        "id": 103,
+        "name": "Acceleration",
+        "description": "The rate of change of velocity.",
+        "latex_variable": "a",
+        "value": "na",
+        "units": "m/s^2"
+      },
+      {
+        "id": 104,
+        "name": "Time",
+        "description": "The time elapsed during motion.",
+        "latex_variable": "t",
+        "value": "na",
+        "units": "s"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Second Kinematic Equation",
+    "description": "Relates displacement, initial velocity, acceleration, and time.",
+    "latex_equation": "s = ut + \\frac{1}{2}at^2",
+    "category": "Classical Mechanics",
+    "created_in": "Classical Era",
+    "history": "Derived as part of Newtonian mechanics, this equation provides insight into an object's displacement under constant acceleration over time.",
+    "variables": [
+      {
+        "id": 201,
+        "name": "Displacement",
+        "description": "The total change in position of the object.",
+        "latex_variable": "s",
+        "value": "na",
+        "units": "m"
+      },
+      {
+        "id": 202,
+        "name": "Initial velocity",
+        "description": "The velocity of the object at the start of observation.",
+        "latex_variable": "u",
+        "value": "na",
+        "units": "m/s"
+      },
+      {
+        "id": 203,
+        "name": "Acceleration",
+        "description": "The rate of change of velocity.",
+        "latex_variable": "a",
+        "value": "na",
+        "units": "m/s^2"
+      },
+      {
+        "id": 204,
+        "name": "Time",
+        "description": "The time elapsed during motion.",
+        "latex_variable": "t",
+        "value": "na",
+        "units": "s"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Third Kinematic Equation",
+    "description": "Relates final velocity, initial velocity, acceleration, and displacement.",
+    "latex_equation": "v^2 = u^2 + 2as",
+    "category": "Classical Mechanics",
+    "created_in": "Classical Era",
+    "history": "This equation is part of the kinematic equations developed during the early study of motion in classical physics. It is especially useful in solving problems without time as a variable.",
+    "variables": [
+      {
+        "id": 301,
+        "name": "Final velocity",
+        "description": "The velocity of the object at the end of observation.",
+        "latex_variable": "v",
+        "value": "na",
+        "units": "m/s"
+      },
+      {
+        "id": 302,
+        "name": "Initial velocity",
+        "description": "The velocity of the object at the start of observation.",
+        "latex_variable": "u",
+        "value": "na",
+        "units": "m/s"
+      },
+      {
+        "id": 303,
+        "name": "Acceleration",
+        "description": "The rate of change of velocity.",
+        "latex_variable": "a",
+        "value": "na",
+        "units": "m/s^2"
+      },
+      {
+        "id": 304,
+        "name": "Displacement",
+        "description": "The total change in position of the object.",
+        "latex_variable": "s",
+        "value": "na",
+        "units": "m"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Fourth Kinematic Equation",
+    "description": "Relates displacement, average velocity, and time.",
+    "latex_equation": "s = \\frac{(u + v)}{2} t",
+    "category": "Classical Mechanics",
+    "created_in": "Classical Era",
+    "history": "This equation simplifies displacement calculations by relating the average velocity during motion to the time elapsed, developed alongside Newtonian mechanics.",
+    "variables": [
+      {
+        "id": 401,
+        "name": "Displacement",
+        "description": "The total change in position of the object.",
+        "latex_variable": "s",
+        "value": "na",
+        "units": "m"
+      },
+      {
+        "id": 402,
+        "name": "Initial velocity",
+        "description": "The velocity of the object at the start of observation.",
+        "latex_variable": "u",
+        "value": "na",
+        "units": "m/s"
+      },
+      {
+        "id": 403,
+        "name": "Final velocity",
+        "description": "The velocity of the object at the end of observation.",
+        "latex_variable": "v",
+        "value": "na",
+        "units": "m/s"
+      },
+      {
+        "id": 404,
+        "name": "Time",
+        "description": "The time elapsed during motion.",
+        "latex_variable": "t",
+        "value": "na",
+        "units": "s"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Ideal Gas Law",
+    "description": "Relates pressure, volume, number of moles, and temperature of an ideal gas.",
+    "latex_equation": "PV = nRT",
+    "category": "Thermodynamics",
+    "created_in": "1834",
+    "history": "The Ideal Gas Law is a combination of Boyle's, Charles', and Avogadro's laws. Benoît Paul Émile Clapeyron formulated this law in its modern form in 1834, bridging observations into a single comprehensive relationship.",
+    "variables": [
+      {
+        "id": 501,
+        "name": "Pressure",
+        "description": "The force exerted by the gas per unit area.",
+        "latex_variable": "P",
+        "value": "na",
+        "units": "Pa"
+      },
+      {
+        "id": 502,
+        "name": "Volume",
+        "description": "The space occupied by the gas.",
+        "latex_variable": "V",
+        "value": "na",
+        "units": "m^3"
+      },
+      {
+        "id": 503,
+        "name": "Number of moles",
+        "description": "The amount of gas in moles.",
+        "latex_variable": "n",
+        "value": "na",
+        "units": "mol"
+      },
+      {
+        "id": 504,
+        "name": "Gas constant",
+        "description": "A constant relating energy scale to temperature for an ideal gas.",
+        "latex_variable": "R",
+        "value": "8.314",
+        "units": "J/(mol·K)"
+      },
+      {
+        "id": 505,
+        "name": "Temperature",
+        "description": "The absolute temperature of the gas.",
+        "latex_variable": "T",
+        "value": "na",
+        "units": "K"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Schwarzschild Radius",
+    "description": "Defines the radius of the event horizon for a non-rotating black hole.",
+    "latex_equation": "r_s = \\frac{2GM}{c^2}",
+    "category": "Astrophysics",
+    "created_in": "1916",
+    "history": "The Schwarzschild radius was derived by Karl Schwarzschild in 1916, shortly after Albert Einstein presented his theory of general relativity. It describes the critical radius where the escape velocity equals the speed of light, marking the boundary of a black hole.",
+    "variables": [
+      {
+        "id": 601,
+        "name": "Schwarzschild radius",
+        "description": "The radius of the event horizon of the black hole.",
+        "latex_variable": "r_s",
+        "value": "na",
+        "units": "m"
+      },
+      {
+        "id": 602,
+        "name": "Gravitational constant",
+        "description": "The universal constant of gravitation.",
+        "latex_variable": "G",
+        "value": "6.67430e-11",
+        "units": "m^3/kg/s^2"
+      },
+      {
+        "id": 603,
+        "name": "Mass",
+        "description": "The mass of the black hole.",
+        "latex_variable": "M",
+        "value": "na",
+        "units": "kg"
+      },
+      {
+        "id": 604,
+        "name": "Speed of light",
+        "description": "The speed of light in a vacuum.",
+        "latex_variable": "c",
+        "value": "299792458",
+        "units": "m/s"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Vis-Viva Equation",
+    "description": "Describes the orbital velocity of a body at a specific distance from the primary focus.",
+    "latex_equation": "v = \\sqrt{GM\\left(\\frac{2}{r} - \\frac{1}{a}\\right)}",
+    "category": "Astrophysics",
+    "created_in": "18th Century",
+    "history": "The vis-viva equation was formulated during the 18th century by astronomers and mathematicians studying orbital mechanics, notably Johann Bernoulli and later formalized in the context of celestial motion.",
+    "variables": [
+      {
+        "id": 701,
+        "name": "Orbital velocity",
+        "description": "The speed of the orbiting body at a given point in orbit.",
+        "latex_variable": "v",
+        "value": "na",
+        "units": "m/s"
+      },
+      {
+        "id": 702,
+        "name": "Gravitational constant",
+        "description": "The universal constant of gravitation.",
+        "latex_variable": "G",
+        "value": "6.67430e-11",
+        "units": "m^3/kg/s^2"
+      },
+      {
+        "id": 703,
+        "name": "Mass of the primary body",
+        "description": "The mass of the central body being orbited.",
+        "latex_variable": "M",
+        "value": "na",
+        "units": "kg"
+      },
+      {
+        "id": 704,
+        "name": "Orbital radius",
+        "description": "The distance of the orbiting body from the central body.",
+        "latex_variable": "r",
+        "value": "na",
+        "units": "m"
+      },
+      {
+        "id": 705,
+        "name": "Semi-major axis",
+        "description": "The semi-major axis of the elliptical orbit.",
+        "latex_variable": "a",
+        "value": "na",
+        "units": "m"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Einstein's Mass-Energy Equivalence",
+    "description": "Relates mass and energy through the speed of light in a vacuum.",
+    "latex_equation": "E = mc^2",
+    "category": "Relativity",
+    "created_in": "1905",
+    "history": "This famous equation was introduced by Albert Einstein in his 1905 paper on special relativity. It demonstrates that mass and energy are interchangeable, providing a profound insight into the fundamental nature of matter and energy.",
+    "variables": [
+      {
+        "id": 801,
+        "name": "Energy",
+        "description": "The total energy equivalent to the object's mass.",
+        "latex_variable": "E",
+        "value": "na",
+        "units": "J"
+      },
+      {
+        "id": 802,
+        "name": "Mass",
+        "description": "The mass of the object.",
+        "latex_variable": "m",
+        "value": "na",
+        "units": "kg"
+      },
+      {
+        "id": 803,
+        "name": "Speed of light",
+        "description": "The constant speed of light in a vacuum.",
+        "latex_variable": "c",
+        "value": "299792458",
+        "units": "m/s"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Hardy-Weinberg Equilibrium",
+    "description": "Predicts genetic variation in a population at equilibrium.",
+    "latex_equation": "p^2 + 2pq + q^2 = 1",
+    "category": "Biology",
+    "created_in": "1908",
+    "history": "Developed independently by G.H. Hardy and Wilhelm Weinberg in 1908, this equation describes the genetic structure of populations not influenced by evolution, such as selection or mutation.",
+    "variables": [
+      {
+        "id": 901,
+        "name": "Frequency of dominant homozygotes",
+        "description": "The proportion of individuals with two dominant alleles.",
+        "latex_variable": "p^2",
+        "value": "na",
+        "units": "none"
+      },
+      {
+        "id": 902,
+        "name": "Frequency of heterozygotes",
+        "description": "The proportion of individuals with one dominant and one recessive allele.",
+        "latex_variable": "2pq",
+        "value": "na",
+        "units": "none"
+      },
+      {
+        "id": 903,
+        "name": "Frequency of recessive homozygotes",
+        "description": "The proportion of individuals with two recessive alleles.",
+        "latex_variable": "q^2",
+        "value": "na",
+        "units": "none"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Black-Scholes Formula for Call Option Price",
+    "description": "Calculates the theoretical price of a European call option.",
+    "latex_equation": "C = S_0 N(d_1) - Xe^{-rT} N(d_2)",
+    "category": "Finance",
+    "created_in": "1973",
+    "history": "The Black-Scholes model was introduced in 1973 by Fischer Black, Myron Scholes, and Robert Merton. It provided a revolutionary framework for pricing financial options.",
+    "variables": [
+      {
+        "id": 1001,
+        "name": "Call option price",
+        "description": "The theoretical price of the European call option.",
+        "latex_variable": "C",
+        "value": "na",
+        "units": "currency"
+      },
+      {
+        "id": 1002,
+        "name": "Spot price of the asset",
+        "description": "The current market price of the underlying asset.",
+        "latex_variable": "S_0",
+        "value": "na",
+        "units": "currency"
+      },
+      {
+        "id": 1003,
+        "name": "Strike price",
+        "description": "The price at which the option holder can buy the asset.",
+        "latex_variable": "X",
+        "value": "na",
+        "units": "currency"
+      },
+      {
+        "id": 1004,
+        "name": "Risk-free interest rate",
+        "description": "The annualized rate of return on a risk-free investment.",
+        "latex_variable": "r",
+        "value": "na",
+        "units": "1/year"
+      },
+      {
+        "id": 1005,
+        "name": "Time to maturity",
+        "description": "The time until the option expires.",
+        "latex_variable": "T",
+        "value": "na",
+        "units": "years"
+      },
+      {
+        "id": 1006,
+        "name": "Cumulative normal distribution function",
+        "description": "Represents the probability that a variable is below d_1 or d_2.",
+        "latex_variable": "N(d)",
+        "value": "na",
+        "units": "none"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Ohm's Law",
+    "description": "Relates voltage, current, and resistance in an electrical circuit.",
+    "latex_equation": "V = IR",
+    "category": "Electromagnetism",
+    "created_in": "1827",
+    "history": "Ohm's Law was formulated by German physicist Georg Simon Ohm in 1827. It describes the linear relationship between voltage, current, and resistance in conductive materials.",
+    "variables": [
+      {
+        "id": 1101,
+        "name": "Voltage",
+        "description": "The potential difference across the circuit.",
+        "latex_variable": "V",
+        "value": "na",
+        "units": "V"
+      },
+      {
+        "id": 1102,
+        "name": "Current",
+        "description": "The flow of electric charge.",
+        "latex_variable": "I",
+        "value": "na",
+        "units": "A"
+      },
+      {
+        "id": 1103,
+        "name": "Resistance",
+        "description": "The opposition to current flow in the circuit.",
+        "latex_variable": "R",
+        "value": "na",
+        "units": "Ω"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Planck's Law",
+    "description": "Describes the spectral radiance of electromagnetic radiation as a function of wavelength for a black body in thermal equilibrium.",
+    "latex_equation": "B_\\lambda(T) = \\frac{2hc^2}{\\lambda^5} \\frac{1}{e^{hc/\\lambda k_B T} - 1}",
+    "category": "Quantum Mechanics",
+    "created_in": "1900",
+    "history": "Max Planck introduced this law in 1900 as part of his quantum theory, which explained black body radiation and led to the development of quantum mechanics.",
+    "variables": [
+      {
+        "id": 1201,
+        "name": "Spectral radiance",
+        "description": "The emitted power per unit area per unit solid angle per unit wavelength.",
+        "latex_variable": "B_\\lambda(T)",
+        "value": "na",
+        "units": "W/m^2/sr/m"
+      },
+      {
+        "id": 1202,
+        "name": "Planck's constant",
+        "description": "A fundamental constant in quantum mechanics.",
+        "latex_variable": "h",
+        "value": "6.62607015e-34",
+        "units": "J·s"
+      },
+      {
+        "id": 1203,
+        "name": "Speed of light",
+        "description": "The speed of light in a vacuum.",
+        "latex_variable": "c",
+        "value": "299792458",
+        "units": "m/s"
+      },
+      {
+        "id": 1204,
+        "name": "Wavelength",
+        "description": "The distance between successive peaks of the electromagnetic wave.",
+        "latex_variable": "\\lambda",
+        "value": "na",
+        "units": "m"
+      },
+      {
+        "id": 1205,
+        "name": "Boltzmann constant",
+        "description": "Relates the average kinetic energy of particles to temperature.",
+        "latex_variable": "k_B",
+        "value": "1.380649e-23",
+        "units": "J/K"
+      },
+      {
+        "id": 1206,
+        "name": "Temperature",
+        "description": "The absolute temperature of the black body.",
+        "latex_variable": "T",
+        "value": "na",
+        "units": "K"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Pythagorean Theorem",
+    "description": "Relates the sides of a right triangle.",
+    "latex_equation": "a^2 + b^2 = c^2",
+    "category": "Geometry",
+    "created_in": "Circa 600 BCE",
+    "history": "The Pythagorean theorem, attributed to the ancient Greek mathematician Pythagoras, has been known since antiquity. It states that the square of the hypotenuse is equal to the sum of the squares of the other two sides.",
+    "variables": [
+      {
+        "id": 1301,
+        "name": "Side A",
+        "description": "One of the shorter sides of the right triangle.",
+        "latex_variable": "a",
+        "value": "na",
+        "units": "length"
+      },
+      {
+        "id": 1302,
+        "name": "Side B",
+        "description": "The other shorter side of the right triangle.",
+        "latex_variable": "b",
+        "value": "na",
+        "units": "length"
+      },
+      {
+        "id": 1303,
+        "name": "Hypotenuse",
+        "description": "The longest side of the right triangle, opposite the right angle.",
+        "latex_variable": "c",
+        "value": "na",
+        "units": "length"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Coulomb's Law",
+    "description": "Describes the electrostatic force between two charged objects.",
+    "latex_equation": "F = k_e \\frac{q_1 q_2}{r^2}",
+    "category": "Electromagnetism",
+    "created_in": "1785",
+    "history": "Coulomb's law was formulated by Charles-Augustin de Coulomb in 1785. It quantifies the magnitude of the electrostatic force between two charges.",
+    "variables": [
+      {
+        "id": 1401,
+        "name": "Electrostatic force",
+        "description": "The force between the two charged objects.",
+        "latex_variable": "F",
+        "value": "na",
+        "units": "N"
+      },
+      {
+        "id": 1402,
+        "name": "Coulomb's constant",
+        "description": "A proportionality constant in electrostatics.",
+        "latex_variable": "k_e",
+        "value": "8.9875517923e9",
+        "units": "N·m^2/C^2"
+      },
+      {
+        "id": 1403,
+        "name": "Charge 1",
+        "description": "The magnitude of the first charge.",
+        "latex_variable": "q_1",
+        "value": "na",
+        "units": "C"
+      },
+      {
+        "id": 1404,
+        "name": "Charge 2",
+        "description": "The magnitude of the second charge.",
+        "latex_variable": "q_2",
+        "value": "na",
+        "units": "C"
+      },
+      {
+        "id": 1405,
+        "name": "Distance",
+        "description": "The separation between the charges.",
+        "latex_variable": "r",
+        "value": "na",
+        "units": "m"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Bernoulli's Equation",
+    "description": "Describes the conservation of energy in fluid dynamics.",
+    "latex_equation": "P + \\frac{1}{2}\\rho v^2 + \\rho gh = \\text{constant}",
+    "category": "Fluid Mechanics",
+    "created_in": "1738",
+    "history": "Bernoulli's equation was introduced by Daniel Bernoulli in 1738. It explains the relationship between pressure, velocity, and height in a fluid flow.",
+    "variables": [
+      {
+        "id": 1501,
+        "name": "Pressure",
+        "description": "The pressure within the fluid.",
+        "latex_variable": "P",
+        "value": "na",
+        "units": "Pa"
+      },
+      {
+        "id": 1502,
+        "name": "Density",
+        "description": "The density of the fluid.",
+        "latex_variable": "\\rho",
+        "value": "na",
+        "units": "kg/m^3"
+      },
+      {
+        "id": 1503,
+        "name": "Velocity",
+        "description": "The velocity of the fluid at a point.",
+        "latex_variable": "v",
+        "value": "na",
+        "units": "m/s"
+      },
+      {
+        "id": 1504,
+        "name": "Gravitational acceleration",
+        "description": "The acceleration due to gravity.",
+        "latex_variable": "g",
+        "value": "9.8",
+        "units": "m/s^2"
+      },
+      {
+        "id": 1505,
+        "name": "Height",
+        "description": "The height above a reference point.",
+        "latex_variable": "h",
+        "value": "na",
+        "units": "m"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Wave Equation",
+    "description": "Describes the propagation of waves, including electromagnetic waves, through a medium.",
+    "latex_equation": "\\frac{\\partial^2 u}{\\partial t^2} = c^2 \\nabla^2 u",
+    "category": "Electromagnetism",
+    "created_in": "1746",
+    "history": "The wave equation was developed in the 18th century, attributed to Jean le Rond d'Alembert, Leonhard Euler, and Daniel Bernoulli. It is fundamental to understanding wave behavior, including light and sound.",
+    "variables": [
+      {
+        "id": 1601,
+        "name": "Wave function",
+        "description": "Represents the displacement of the wave at a given point and time.",
+        "latex_variable": "u",
+        "value": "na",
+        "units": "varies with context"
+      },
+      {
+        "id": 1602,
+        "name": "Time",
+        "description": "The time variable.",
+        "latex_variable": "t",
+        "value": "na",
+        "units": "s"
+      },
+      {
+        "id": 1603,
+        "name": "Wave speed",
+        "description": "The speed at which the wave propagates.",
+        "latex_variable": "c",
+        "value": "na",
+        "units": "m/s"
+      },
+      {
+        "id": 1604,
+        "name": "Laplacian",
+        "description": "The spatial part of the wave equation.",
+        "latex_variable": "\\nabla^2",
+        "value": "na",
+        "units": "1/m^2"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Maxwell's Equations (Faraday's Law)",
+    "description": "Describes how a changing magnetic field creates an electric field.",
+    "latex_equation": "\\nabla \\times \\mathbf{E} = -\\frac{\\partial \\mathbf{B}}{\\partial t}",
+    "category": "Electromagnetism",
+    "created_in": "1861-1862",
+    "history": "Faraday's Law is part of Maxwell's equations, formulated by James Clerk Maxwell in the 1860s. It unifies electricity and magnetism, explaining the fundamental relationship between changing magnetic and electric fields.",
+    "variables": [
+      {
+        "id": 1701,
+        "name": "Electric field",
+        "description": "The electric field vector.",
+        "latex_variable": "\\mathbf{E}",
+        "value": "na",
+        "units": "V/m"
+      },
+      {
+        "id": 1702,
+        "name": "Magnetic field",
+        "description": "The magnetic field vector.",
+        "latex_variable": "\\mathbf{B}",
+        "value": "na",
+        "units": "T"
+      },
+      {
+        "id": 1703,
+        "name": "Time",
+        "description": "The time variable.",
+        "latex_variable": "t",
+        "value": "na",
+        "units": "s"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Fourier Transform",
+    "description": "Transforms a signal from the time domain to the frequency domain.",
+    "latex_equation": "F(\\omega) = \\int_{-\\infty}^{\\infty} f(t)e^{-i\\omega t} dt",
+    "category": "Signal Processing",
+    "created_in": "1822",
+    "history": "The Fourier Transform is named after Joseph Fourier, who introduced the Fourier series in 1822. It became a cornerstone in signal processing and the analysis of electromagnetic waves.",
+    "variables": [
+      {
+        "id": 1801,
+        "name": "Frequency domain function",
+        "description": "The representation of the signal in the frequency domain.",
+        "latex_variable": "F(\\omega)",
+        "value": "na",
+        "units": "varies with context"
+      },
+      {
+        "id": 1802,
+        "name": "Time domain function",
+        "description": "The original signal as a function of time.",
+        "latex_variable": "f(t)",
+        "value": "na",
+        "units": "varies with context"
+      },
+      {
+        "id": 1803,
+        "name": "Angular frequency",
+        "description": "The angular frequency in radians per second.",
+        "latex_variable": "\\omega",
+        "value": "na",
+        "units": "rad/s"
+      },
+      {
+        "id": 1804,
+        "name": "Time",
+        "description": "The time variable.",
+        "latex_variable": "t",
+        "value": "na",
+        "units": "s"
+      },
+      {
+        "id": 1805,
+        "name": "Complex exponential",
+        "description": "The kernel of the Fourier transform.",
+        "latex_variable": "e^{-i\\omega t}",
+        "value": "na",
+        "units": "dimensionless"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Schrödinger Equation",
+    "description": "Describes how the quantum state of a physical system changes with time.",
+    "latex_equation": "i\\hbar \\frac{\\partial}{\\partial t}\\Psi(\\mathbf{r}, t) = -\\frac{\\hbar^2}{2m}\\nabla^2\\Psi(\\mathbf{r}, t) + V(\\mathbf{r}, t)\\Psi(\\mathbf{r}, t)",
+    "category": "Quantum Mechanics",
+    "created_in": "1926",
+    "history": "The Schrödinger equation was formulated by Austrian physicist Erwin Schrödinger in 1926. It is a cornerstone of quantum mechanics, describing the evolution of a quantum state over time.",
+    "variables": [
+      {
+        "id": 1901,
+        "name": "Wavefunction",
+        "description": "Represents the quantum state of the system.",
+        "latex_variable": "\\Psi(\\mathbf{r}, t)",
+        "value": "na",
+        "units": "dimensionless"
+      },
+      {
+        "id": 1902,
+        "name": "Reduced Planck's constant",
+        "description": "A fundamental constant in quantum mechanics.",
+        "latex_variable": "\\hbar",
+        "value": "1.054571817e-34",
+        "units": "J·s"
+      },
+      {
+        "id": 1903,
+        "name": "Time",
+        "description": "The time variable.",
+        "latex_variable": "t",
+        "value": "na",
+        "units": "s"
+      },
+      {
+        "id": 1904,
+        "name": "Mass",
+        "description": "The mass of the particle.",
+        "latex_variable": "m",
+        "value": "na",
+        "units": "kg"
+      },
+      {
+        "id": 1905,
+        "name": "Laplacian",
+        "description": "Represents the spatial second derivative.",
+        "latex_variable": "\\nabla^2",
+        "value": "na",
+        "units": "1/m^2"
+      },
+      {
+        "id": 1906,
+        "name": "Potential energy",
+        "description": "The potential energy function of the system.",
+        "latex_variable": "V(\\mathbf{r}, t)",
+        "value": "na",
+        "units": "J"
+      },
+      {
+        "id": 1907,
+        "name": "Position",
+        "description": "The position vector in space.",
+        "latex_variable": "\\mathbf{r}",
+        "value": "na",
+        "units": "m"
+      }
+    ]
+  }  
+]
