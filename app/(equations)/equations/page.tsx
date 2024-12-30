@@ -1,35 +1,21 @@
 import React from 'react'
-import { promises as fs } from 'fs';
-import EqnRender from '../../components/EqnRender';
-import MoreDetailsButton from '../../components/MoreDetails';
+import { sanityFetch, SanityLive } from '@/sanity/lib/live';
+import { EQUATIONS_QUERY } from '@/sanity/lib/queries';
+import { SearchForm } from '@/app/components/SearchForm';
+import EquationCard, { EquationTypeCard } from '@/app/components/EquationCard';
 
-interface Variable {
-    id: number;
-    name: string;
-    description: string;
-    latex_variable: string;
-    value: string;
-    units: string;
-}
 
-interface Equation {
-    id: number;
-    name: string;
-    description: string;
-    latex_equation: string;
-    category: string;
-    variables: Variable[];
-}
+const EquationsPage = async ({ searchParams }: {
+    searchParams: Promise<{query?: string}>
+  }) => {
 
-const EquationsPage = async () => {
-    
-    const file = await fs.readFile(process.cwd() + '/app/data.json', 'utf8');
-    const data: Equation[] = JSON.parse(file);
-    // console.log(data);
+    const query = (await searchParams).query;
+    const params = { search: query || null };
+    const { data: equations } = await sanityFetch({query: EQUATIONS_QUERY, params});
 
     var fieldsOfStudy: string[] = [];
 
-    data.forEach( (equation) => {
+    equations.forEach( (equation) => {
         if(!fieldsOfStudy.includes(equation.category)) {
             fieldsOfStudy.push(equation.category);
         }
@@ -72,30 +58,26 @@ const EquationsPage = async () => {
         </div>
         <br />
 
-        <div className='text-center text-2xl py-3 font-extrabold'>All Equations</div>
-        <div className='overflow-x-auto rounded-lg h-96 pb-10 px-3 w-11/12 justify-self-center shadow-md shadow-primary'>
-            <table className='table table-pin-rows'>
-            <thead className='bg-transparent pt-6'>
-                <tr>
-                <th>Name</th>
-                {/* <th>Description</th> */}
-                <th className='text-center'>Field of Study</th>
-                {/* <th>LaTeX</th> */}
-                <th className='text-center'>Equation</th>
-                <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                {data.map(equation => <tr key={equation.id} className='hover'>
-                <td>{equation.name}</td>
-                {/* <td>{equation.description}</td> */}
-                <td className='text-center'>{equation.category}</td>
-                {/* <td>{equation.latex_equation}</td> */}
-                <td><EqnRender eqn={equation.latex_equation} /></td>
-                <td><MoreDetailsButton eqn={equation}/></td></tr>)}
-            </tbody>
-            </table>
+        <section>
+        <div className='justify-self-center justify-center text-center w-full'>
+          <SearchForm query={query}/>
         </div>
+      </section>
+      <section className='section-container'>
+        <p className='text-30-semibold justify-self-center pt-9'>
+          {query ? `Search Results for ${query}` : "All Equations"}
+        </p>
+        <ul className='mt-7 card_grid'>
+          {equations?.length > 0 ? (
+            equations.map((equation: EquationTypeCard, index: number) => (
+              <EquationCard key={equation._id} eqn={equation}/>
+            ))
+          ) : (
+            <p className='no-result'>No equations found</p>
+          )}
+        </ul>
+      </section>
+      <SanityLive />
     </>
     )
 }

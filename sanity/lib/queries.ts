@@ -81,3 +81,17 @@ export const AUTHOR_BY_ID_QUERY = defineQuery(`
     image
   }
 `)
+
+export const TOOLBOX_BY_AUTHOR_QUERY = defineQuery(`*[_type == "toolbox" && author._ref == $id] | order(views desc) {
+  _id, 
+  title, 
+  slug,
+  _createdAt,
+  author -> {
+    _id, name, email, image
+  }, 
+  description, 
+  views,
+  equations,
+  image,
+}`)

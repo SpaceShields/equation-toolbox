@@ -5,7 +5,7 @@ import SearchFormReset from './SearchFormReset';
 export const SearchForm = ({ query }: { query?: string }) => {
 
   return (
-    <Form action="/" scroll={false} className='search-form justify-self-center'>
+    <Form action="/equations" scroll={false} className='search-form justify-self-center'>
       <input 
         type="text" 
         className="search-input font-comfortaa" 

@@ -1,9 +1,11 @@
 import { signIn, auth, signOut } from '@/auth'
+import Link from 'next/link';
 import React from 'react'
 
 const ProfileIconDropdownButton = async () => {
 
     const session = await auth();
+    const id = session?.id;
     const user = session?.user;
 
   return user ? 
@@ -24,10 +26,10 @@ const ProfileIconDropdownButton = async () => {
                 <p>{user.name}</p>
             </li>
             <li>
-                <a className="justify-between">
+                <Link href={`/user/${id}`} className="justify-between">
                     Profile
                     <span className="badge">New</span>
-                </a>
+                </Link>
             </li>
             <li>
                 <form

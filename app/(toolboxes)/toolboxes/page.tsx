@@ -36,7 +36,7 @@ const ToolboxesPage = async () => {
               <ToolboxCard key={toolbox._id} toolbox={toolbox}/>
             ))
           ) : (
-            <p className='no-result'>No equations found</p>
+            <p className='no-result'>No toolboxes found</p>
           )}
         </ul>
       </section>

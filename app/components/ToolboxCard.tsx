@@ -38,7 +38,7 @@ const ToolboxCard = ({ toolbox }: { toolbox: ToolboxTypeCard }) => {
             </div>
         </Link>
         <Link href={`/toolboxes/${toolbox._id}`} className='flex-between justify-self-center text-center'>
-            <p className='rounded-full bg-base-100 font-android px-5 py-2 my-2 text-lg lg:text-2xl md:text-xl shadow-md shadow-black group-hover:shadow-primary transition-all ease-in-out group-hover:shadow-md group-hover:scale-125'>
+            <p className='rounded-full bg-base-100 font-android px-5 py-2 my-2 text-lg lg:text-2xl md:text-xl shadow-md shadow-black group-hover:shadow-primary transition-all ease-in-out group-hover:shadow-md group-hover:scale-110'>
                 {toolbox.title}
             </p>
         </Link>
