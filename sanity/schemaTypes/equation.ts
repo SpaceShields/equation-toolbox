@@ -26,7 +26,8 @@ export const equation = defineType({
         }),
         defineField({
             name: 'category',
-            type: 'string',
+            type: 'reference',
+            to: { type: 'category' }
         }),
         defineField({
             name: 'tex',
@@ -39,6 +40,15 @@ export const equation = defineType({
         defineField({
             name: 'year_derived',
             type: 'string',
+        }),
+        defineField({
+            name: 'variables',
+            type: 'array',
+            title: 'Variables',
+            of: [{
+                type: 'reference',
+                to: [{type: 'variable'}]
+            }]
         }),
     ]
 })

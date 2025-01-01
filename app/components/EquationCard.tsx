@@ -1,9 +1,9 @@
 import React from 'react';
 import MoreDetailsButton from '../components/MoreDetails';
 import EqnRenderInline from './EqnRenderInline';
-import { Equation } from '@/sanity.types';
+import { Category, Equation } from '@/sanity.types';
 
-export type EquationTypeCard = Omit<Equation, "history" | "description" | "year_derived">
+export type EquationTypeCard = Omit<Equation, "history" | "description" | "year_derived" | "category"> & { category?: Category };
 
 const EquationCard = ({ eqn }: { eqn: EquationTypeCard }) => {
   return (
@@ -13,7 +13,7 @@ const EquationCard = ({ eqn }: { eqn: EquationTypeCard }) => {
         </div>
         <div className='flex-between gap-5 justify-self-center'>
             <div className='flex-1'>
-                <p className='text-16-medium line-clamp-1 mt-2'>{eqn.category}</p>
+                <p className='text-16-medium line-clamp-1 mt-2'>{eqn.category?.title}</p>
             </div>
         </div>
         <div className='flex text-center justify-center mt-3 sm:scale-75 md:scale-90 lg:scale-110 min-w-full'>

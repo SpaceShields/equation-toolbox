@@ -57,7 +57,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme={getCurrentTheme()} className={`${android.variable} ${aquire.variable} ${comfortaa.variable} ${megrim.variable}`}>
       <body className={inter.className}>
-        <div className='fixed bottom-2 right-2 h-16 w-16 p-2 z-10'>
+        <div className='absolute top-[7px] right-14 h-16 w-16 p-2 z-10'>
           <ThemeChangeButton />
         </div>
         <div>

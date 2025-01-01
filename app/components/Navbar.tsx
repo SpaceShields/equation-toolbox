@@ -11,7 +11,7 @@ const Navbar = () => {
                 <div className="px-3 hover:underline hover:text-primary"><Link href="/equations">Equations</Link></div>
                 <div className="px-3 hover:underline hover:text-primary"><Link href="/toolboxes">Toolboxes</Link></div>
             </div>
-            <div className="flex-none gap-2">
+            <div className="flex-none mt-1 mr-1">
                 {/* <div className="form-control">
                 <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
                 </div> */}

@@ -125,6 +125,20 @@ export type SanityAssetSourceData = {
   url?: string;
 };
 
+export type Variable = {
+  _id: string;
+  _type: "variable";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  title?: string;
+  description?: string;
+  tex?: string;
+  units?: string;
+  constant?: boolean;
+  value?: string;
+};
+
 export type Toolbox = {
   _id: string;
   _type: "toolbox";
@@ -151,14 +165,6 @@ export type Toolbox = {
   }>;
 };
 
-export type EquationItems = Array<{
-  _ref: string;
-  _type: "reference";
-  _weak?: boolean;
-  _key: string;
-  [internalGroqTypeReferenceTo]?: "equation";
-}>;
-
 export type Equation = {
   _id: string;
   _type: "equation";
@@ -169,10 +175,35 @@ export type Equation = {
   slug?: Slug;
   views?: number;
   description?: string;
-  category?: string;
+  category?: {
+    _ref: string;
+    _type: "reference";
+    _weak?: boolean;
+    [internalGroqTypeReferenceTo]?: "category";
+  };
   tex?: string;
   history?: string;
   year_derived?: string;
+  variables?: Array<{
+    _ref: string;
+    _type: "reference";
+    _weak?: boolean;
+    _key: string;
+    [internalGroqTypeReferenceTo]?: "variable";
+  }>;
+};
+
+export type Category = {
+  _id: string;
+  _type: "category";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  title?: string;
+  description?: string;
+  discipline?: string;
+  image?: string;
+  top_contributors?: Array<string>;
 };
 
 export type Slug = {
@@ -192,5 +223,5 @@ export type Author = {
   image?: string;
 };
 
-export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityImageHotspot | SanityImageCrop | SanityFileAsset | SanityImageAsset | SanityImageMetadata | Geopoint | SanityAssetSourceData | Toolbox | EquationItems | Equation | Slug | Author;
+export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityImageHotspot | SanityImageCrop | SanityFileAsset | SanityImageAsset | SanityImageMetadata | Geopoint | SanityAssetSourceData | Variable | Toolbox | Equation | Category | Slug | Author;
 export declare const internalGroqTypeReferenceTo: unique symbol;

@@ -35,8 +35,12 @@ export const toolbox = defineType({
         }),
         defineField({
             name: 'equations',
-            type: 'equationItems',
-            title: 'Items'
+            type: 'array',
+            title: 'Equations',
+            of: [{
+                type: 'reference',
+                to: [{type: 'equation'}]
+            }]
         }),
     ]
 })

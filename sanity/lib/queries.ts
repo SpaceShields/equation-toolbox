@@ -26,6 +26,17 @@ export const TOOLBOX_QUERY = defineQuery(`*[_type == "toolbox" && defined(slug.c
   image,
 }`)
 
+export const CATEGORY_QUERY = defineQuery(`
+    *[_type == "category"] | order(title desc) {
+      _id,
+      title,
+      description,
+      discipline,
+      image,
+      top_contributors,
+    }
+  `)
+
 export const EQUATION_BY_ID_QUERY = defineQuery(`*[_type == "equation" && _id == $id][0]{
   _id, 
   title, 
@@ -34,8 +45,19 @@ export const EQUATION_BY_ID_QUERY = defineQuery(`*[_type == "equation" && _id ==
   views, 
   history,
   year_derived, 
-  category,
-  tex
+  category -> {
+    _id, title
+  },
+  tex,
+  variables[] -> {
+    _id,
+    title,
+    description,
+    tex,
+    units,
+    constant,
+    value
+  },
 }`)
 
 export const TOOLBOX_BY_ID_QUERY = defineQuery(`*[_type == "toolbox" && _id == $id][0]{
