@@ -31,7 +31,9 @@ export const CATEGORY_QUERY = defineQuery(`
       _id,
       title,
       description,
-      discipline,
+      discipline -> {
+        _id, title, description, image
+      },
       image,
       top_contributors,
     }
@@ -114,6 +116,20 @@ export const TOOLBOX_BY_AUTHOR_QUERY = defineQuery(`*[_type == "toolbox" && auth
   }, 
   description, 
   views,
-  equations,
+  equations[] -> {
+    _id,
+    title,
+    tex,
+    category -> {
+      _id, title
+    }
+  },
   image,
 }`)
+
+export const DISCIPLINE_QUERY = defineQuery(`*[_type == "discipline"] | order(title desc)
+  _id,
+  title,
+  description,
+  image
+`)

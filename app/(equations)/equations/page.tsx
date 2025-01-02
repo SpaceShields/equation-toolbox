@@ -4,6 +4,7 @@ import { CATEGORY_QUERY, EQUATIONS_QUERY } from '@/sanity/lib/queries';
 import { SearchForm } from '@/app/components/SearchForm';
 import EquationCard, { EquationTypeCard } from '@/app/components/EquationCard';
 import { client } from '@/sanity/lib/client';
+import CategoryCard, { CategoryTypeCard } from '@/app/components/CategoryCard';
 
 
 const EquationsPage = async ({ searchParams }: {
@@ -27,7 +28,7 @@ const EquationsPage = async ({ searchParams }: {
     return (
     <>
         <div className='text-center text-3xl py-3 font-android'>Fields of Study</div>
-        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 p-4 w-11/12 h-auto mx-auto rounded-md'>
+        {/* <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 p-4 w-11/12 h-auto mx-auto rounded-md'>
             <div className="card bg-base-100 w-auto md:shadow-md hover:shadow-primary" key='999' >
                 <div className="card-body text-center">
                     <p className='italic'>All Equations</p>
@@ -56,7 +57,16 @@ const EquationsPage = async ({ searchParams }: {
                     </div>
                 </div>
             ):(<></>)}
-        </div>
+        </div> */}
+        <ul className='mt-7 card_grid w-11/12 justify-self-center'>
+          {categories?.length > 0 ? (
+            categories.map((category: CategoryTypeCard, index: number) => (
+              <CategoryCard key={category._id} category={category}/>
+            ))
+          ) : (
+            <p className='no-result'>No categories found</p>
+          )}
+        </ul>
         <br />
 
         <section>

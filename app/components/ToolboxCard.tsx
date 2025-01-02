@@ -13,14 +13,8 @@ const ToolboxCard = ({ toolbox }: { toolbox: ToolboxTypeCard }) => {
             height: 'auto',
             width: 'full'
         }}
-        className='equation-card group bg-center bg-cover bg-blend-overlay'
-    >
-        {/* <img 
-            src={toolbox.image}
-            alt="cover photo"
-            className='w-auto h-16 overflow-y-hidden z-0'
-        /> */}
-        
+        className='equation-card group bg-center bg-cover shadow-md shadow-black'
+    >   
         <Link
             href={`/user/${toolbox.author?._id}`}
             className="flex gap-2 items-center p-2 mb-1 justify-self-center rounded-full bg-base-100 shadow-inner shadow-black"

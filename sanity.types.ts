@@ -201,9 +201,25 @@ export type Category = {
   _rev: string;
   title?: string;
   description?: string;
-  discipline?: string;
+  discipline?: {
+    _ref: string;
+    _type: "reference";
+    _weak?: boolean;
+    [internalGroqTypeReferenceTo]?: "discipline";
+  };
   image?: string;
   top_contributors?: Array<string>;
+};
+
+export type Discipline = {
+  _id: string;
+  _type: "discipline";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  title?: string;
+  description?: string;
+  image?: string;
 };
 
 export type Slug = {
@@ -223,5 +239,5 @@ export type Author = {
   image?: string;
 };
 
-export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityImageHotspot | SanityImageCrop | SanityFileAsset | SanityImageAsset | SanityImageMetadata | Geopoint | SanityAssetSourceData | Variable | Toolbox | Equation | Category | Slug | Author;
+export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityImageHotspot | SanityImageCrop | SanityFileAsset | SanityImageAsset | SanityImageMetadata | Geopoint | SanityAssetSourceData | Variable | Toolbox | Equation | Category | Discipline | Slug | Author;
 export declare const internalGroqTypeReferenceTo: unique symbol;

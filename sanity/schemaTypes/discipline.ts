@@ -1,8 +1,8 @@
 import { defineField, defineType } from "sanity";
 
-export const category = defineType({
-    name: "category",
-    title: "Category",
+export const discipline = defineType({
+    name: "discipline",
+    title: "Discipline",
     type: 'document',
     fields: [
         defineField({
@@ -14,18 +14,8 @@ export const category = defineType({
             type: 'text',
         }),
         defineField({
-            name: 'discipline',
-            type: 'reference',
-            to: {type: 'discipline'}
-        }),
-        defineField({
             name: 'image',
             type: 'url',
-        }),
-        defineField({
-            name: 'top_contributors',
-            type: 'array',
-            of: [{type: 'string'}],
         }),
     ]
 })
